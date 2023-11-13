@@ -40,6 +40,7 @@ urlpatterns = [
     path("application/files/s/<fuid>", # specific file
     path("application/files/delete/<id>", database_views.database_item_delete),
     path("application/files/edit/<id>", database_views.database_item_edit),
+    path("application/about", core_views.aboutus),
     path("api/delete/<id>", database_views.api_item_delete),
     path("api/process/<id>", database_views.api_item_process),
 
